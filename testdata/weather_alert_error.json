@@ -1,0 +1,7 @@
+{
+    "timestamp": "2022-07-10T21:24:14Z",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Bad Request",
+    "path": "/api/v1/weatherAlert/en/test"
+}

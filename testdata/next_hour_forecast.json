@@ -1,0 +1,423 @@
+{
+    "forecastNextHour": {
+        "name": "NextHourForecast",
+        "metadata": {
+            "attributionURL": "https://weather-data.apple.com/legal-attribution.html",
+            "expireTime": "2022-07-05T18:24:27Z",
+            "language": "en-US",
+            "latitude": 40.713,
+            "longitude": -74.006,
+            "providerName": "US National Weather Service",
+            "readTime": "2022-07-05T18:21:27Z",
+            "units": "m",
+            "version": 1
+        },
+        "summary": [
+            {
+                "startTime": "2022-07-05T18:22:00Z",
+                "condition": "clear",
+                "precipitationChance": 0.00,
+                "precipitationIntensity": 0.00
+            }
+        ],
+        "forecastStart": "2022-07-05T18:22:00Z",
+        "forecastEnd": "2022-07-05T19:41:00Z",
+        "minutes": [
+            {
+                "startTime": "2022-07-05T18:22:00Z",
+                "precipitationChance": 0.01,
+                "precipitationIntensity": 0.10
+            },
+            {
+                "startTime": "2022-07-05T18:23:00Z",
+                "precipitationChance": 0.02,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:24:00Z",
+                "precipitationChance": 0.02,
+                "precipitationIntensity": 0.11
+            },
+            {
+                "startTime": "2022-07-05T18:25:00Z",
+                "precipitationChance": 0.03,
+                "precipitationIntensity": 0.11
+            },
+            {
+                "startTime": "2022-07-05T18:26:00Z",
+                "precipitationChance": 0.04,
+                "precipitationIntensity": 0.11
+            },
+            {
+                "startTime": "2022-07-05T18:27:00Z",
+                "precipitationChance": 0.05,
+                "precipitationIntensity": 0.11
+            },
+            {
+                "startTime": "2022-07-05T18:28:00Z",
+                "precipitationChance": 0.06,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:29:00Z",
+                "precipitationChance": 0.07,
+                "precipitationIntensity": 0.11
+            },
+            {
+                "startTime": "2022-07-05T18:30:00Z",
+                "precipitationChance": 0.09,
+                "precipitationIntensity": 0.11
+            },
+            {
+                "startTime": "2022-07-05T18:31:00Z",
+                "precipitationChance": 0.09,
+                "precipitationIntensity": 0.11
+            },
+            {
+                "startTime": "2022-07-05T18:32:00Z",
+                "precipitationChance": 0.10,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:33:00Z",
+                "precipitationChance": 0.11,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:34:00Z",
+                "precipitationChance": 0.11,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:35:00Z",
+                "precipitationChance": 0.12,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T18:36:00Z",
+                "precipitationChance": 0.12,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:37:00Z",
+                "precipitationChance": 0.12,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:38:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:39:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:40:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.15
+            },
+            {
+                "startTime": "2022-07-05T18:41:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:42:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:43:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:44:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:45:00Z",
+                "precipitationChance": 0.14,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T18:46:00Z",
+                "precipitationChance": 0.14,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:47:00Z",
+                "precipitationChance": 0.14,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:48:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T18:49:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:50:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T18:51:00Z",
+                "precipitationChance": 0.13,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:52:00Z",
+                "precipitationChance": 0.12,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:53:00Z",
+                "precipitationChance": 0.11,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:54:00Z",
+                "precipitationChance": 0.10,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T18:55:00Z",
+                "precipitationChance": 0.10,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T18:56:00Z",
+                "precipitationChance": 0.09,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:57:00Z",
+                "precipitationChance": 0.08,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T18:58:00Z",
+                "precipitationChance": 0.07,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T18:59:00Z",
+                "precipitationChance": 0.07,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T19:00:00Z",
+                "precipitationChance": 0.06,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T19:01:00Z",
+                "precipitationChance": 0.06,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T19:02:00Z",
+                "precipitationChance": 0.05,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T19:03:00Z",
+                "precipitationChance": 0.05,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T19:04:00Z",
+                "precipitationChance": 0.05,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T19:05:00Z",
+                "precipitationChance": 0.05,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T19:06:00Z",
+                "precipitationChance": 0.05,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T19:07:00Z",
+                "precipitationChance": 0.05,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T19:08:00Z",
+                "precipitationChance": 0.05,
+                "precipitationIntensity": 0.12
+            },
+            {
+                "startTime": "2022-07-05T19:09:00Z",
+                "precipitationChance": 0.06,
+                "precipitationIntensity": 0.13
+            },
+            {
+                "startTime": "2022-07-05T19:10:00Z",
+                "precipitationChance": 0.06,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T19:11:00Z",
+                "precipitationChance": 0.07,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T19:12:00Z",
+                "precipitationChance": 0.08,
+                "precipitationIntensity": 0.14
+            },
+            {
+                "startTime": "2022-07-05T19:13:00Z",
+                "precipitationChance": 0.09,
+                "precipitationIntensity": 0.15
+            },
+            {
+                "startTime": "2022-07-05T19:14:00Z",
+                "precipitationChance": 0.11,
+                "precipitationIntensity": 0.15
+            },
+            {
+                "startTime": "2022-07-05T19:15:00Z",
+                "precipitationChance": 0.12,
+                "precipitationIntensity": 0.17
+            },
+            {
+                "startTime": "2022-07-05T19:16:00Z",
+                "precipitationChance": 0.14,
+                "precipitationIntensity": 0.17
+            },
+            {
+                "startTime": "2022-07-05T19:17:00Z",
+                "precipitationChance": 0.16,
+                "precipitationIntensity": 0.18
+            },
+            {
+                "startTime": "2022-07-05T19:18:00Z",
+                "precipitationChance": 0.18,
+                "precipitationIntensity": 0.21
+            },
+            {
+                "startTime": "2022-07-05T19:19:00Z",
+                "precipitationChance": 0.20,
+                "precipitationIntensity": 0.22
+            },
+            {
+                "startTime": "2022-07-05T19:20:00Z",
+                "precipitationChance": 0.22,
+                "precipitationIntensity": 0.22
+            },
+            {
+                "startTime": "2022-07-05T19:21:00Z",
+                "precipitationChance": 0.24,
+                "precipitationIntensity": 0.23
+            },
+            {
+                "startTime": "2022-07-05T19:22:00Z",
+                "precipitationChance": 0.26,
+                "precipitationIntensity": 0.24
+            },
+            {
+                "startTime": "2022-07-05T19:23:00Z",
+                "precipitationChance": 0.29,
+                "precipitationIntensity": 0.26
+            },
+            {
+                "startTime": "2022-07-05T19:24:00Z",
+                "precipitationChance": 0.31,
+                "precipitationIntensity": 0.28
+            },
+            {
+                "startTime": "2022-07-05T19:25:00Z",
+                "precipitationChance": 0.33,
+                "precipitationIntensity": 0.29
+            },
+            {
+                "startTime": "2022-07-05T19:26:00Z",
+                "precipitationChance": 0.35,
+                "precipitationIntensity": 0.30
+            },
+            {
+                "startTime": "2022-07-05T19:27:00Z",
+                "precipitationChance": 0.37,
+                "precipitationIntensity": 0.32
+            },
+            {
+                "startTime": "2022-07-05T19:28:00Z",
+                "precipitationChance": 0.39,
+                "precipitationIntensity": 0.33
+            },
+            {
+                "startTime": "2022-07-05T19:29:00Z",
+                "precipitationChance": 0.42,
+                "precipitationIntensity": 0.33
+            },
+            {
+                "startTime": "2022-07-05T19:30:00Z",
+                "precipitationChance": 0.43,
+                "precipitationIntensity": 0.34
+            },
+            {
+                "startTime": "2022-07-05T19:31:00Z",
+                "precipitationChance": 0.45,
+                "precipitationIntensity": 0.36
+            },
+            {
+                "startTime": "2022-07-05T19:32:00Z",
+                "precipitationChance": 0.47,
+                "precipitationIntensity": 0.34
+            },
+            {
+                "startTime": "2022-07-05T19:33:00Z",
+                "precipitationChance": 0.48,
+                "precipitationIntensity": 0.36
+            },
+            {
+                "startTime": "2022-07-05T19:34:00Z",
+                "precipitationChance": 0.49,
+                "precipitationIntensity": 0.36
+            },
+            {
+                "startTime": "2022-07-05T19:35:00Z",
+                "precipitationChance": 0.50,
+                "precipitationIntensity": 0.36
+            },
+            {
+                "startTime": "2022-07-05T19:36:00Z",
+                "precipitationChance": 0.55,
+                "precipitationIntensity": 0.36
+            },
+            {
+                "startTime": "2022-07-05T19:37:00Z",
+                "precipitationChance": 0.55,
+                "precipitationIntensity": 0.37
+            },
+            {
+                "startTime": "2022-07-05T19:38:00Z",
+                "precipitationChance": 0.58,
+                "precipitationIntensity": 0.37
+            },
+            {
+                "startTime": "2022-07-05T19:39:00Z",
+                "precipitationChance": 0.56,
+                "precipitationIntensity": 0.37
+            },
+            {
+                "startTime": "2022-07-05T19:40:00Z",
+                "precipitationChance": 0.20,
+                "precipitationIntensity": 0.20
+            }
+        ]
+    }
+}

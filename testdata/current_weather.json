@@ -1,0 +1,31 @@
+{
+    "currentWeather": {
+        "name": "CurrentWeather",
+        "metadata": {
+            "attributionURL": "https://weather-data.apple.com/legal-attribution.html",
+            "expireTime": "2022-07-05T17:49:55Z",
+            "latitude": 40.713,
+            "longitude": -74.006,
+            "readTime": "2022-07-05T17:44:55Z",
+            "reportedTime": "2022-07-05T16:08:11Z",
+            "units": "m",
+            "version": 1
+        },
+        "asOf": "2022-07-05T17:44:55Z",
+        "cloudCover": 0.89,
+        "conditionCode": "Cloudy",
+        "daylight": true,
+        "humidity": 0.51,
+        "precipitationIntensity": 0.00,
+        "pressure": 1015.35,
+        "pressureTrend": "falling",
+        "temperature": 29.42,
+        "temperatureApparent": 30.72,
+        "temperatureDewPoint": 18.21,
+        "uvIndex": 5,
+        "visibility": 32965.47,
+        "windDirection": 165,
+        "windGust": 37.54,
+        "windSpeed": 22.02
+    }
+}
