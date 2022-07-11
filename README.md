@@ -72,4 +72,4 @@ See Apple's documentation for Apple Weather and third-party attribution requirem
 - [Multiple data sets](https://github.com/shawntoffel/go-weatherkit/tree/master/examples/multiple_datasets/main.go)
 
 ## Troubleshooting
-Please use the GitHub discussions tab for questions regarding this client library. The Apple Developer forums are available for questions regarding the underlying API: https://developer.apple.com/forums/tags/weatherkit
+Please use the GitHub [Discussions](https://github.com/shawntoffel/go-weatherkit/discussions) tab for questions regarding this client library. The Apple Developer forums are available for questions regarding the underlying API: https://developer.apple.com/forums/tags/weatherkit
