@@ -1,5 +1,8 @@
 # go-weatherkit
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/shawntoffel/go-weatherkit.svg)](https://pkg.go.dev/github.com/shawntoffel/go-weatherkit) 
+ [![Go Report Card](https://goreportcard.com/badge/github.com/shawntoffel/go-weatherkit)](https://goreportcard.com/report/github.com/shawntoffel/go-weatherkit) [![Build status](https://github.com/shawntoffel/go-weatherkit/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/shawntoffel/go-weatherkit/actions/workflows/go.yml)
+
 A [WeatherKit](https://developer.apple.com/weatherkit/) API client in Go. WeatherKit is powered by the Apple Weather service.
 
 Notice: The WeatherKit REST API is currently in beta and is subject to change. This client was created from documentation available here: https://developer.apple.com/documentation/weatherkitrestapi
