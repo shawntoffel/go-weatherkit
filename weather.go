@@ -107,7 +107,7 @@ const (
 	// No precipitation is occurring.
 	PrecipitationTypeClear PrecipitationType = "clear"
 
-	// An unknown type of precipitation is occuring.
+	// An unknown type of precipitation is occurring.
 	PrecipitationTypePrecipitation PrecipitationType = "precipitation"
 
 	// Rain or freezing rain is falling.
@@ -465,7 +465,7 @@ type CurrentWeatherData struct {
 	WindSpeed float64 `json:"windSpeed"`
 }
 
-// WeatherAlertCollection is a collecton of weather alerts.
+// WeatherAlertCollection is a collection of weather alerts.
 type WeatherAlertCollection struct {
 	// (Required) An array of weather alert summaries.
 	Alerts []WeatherAlertSummary `json:"alerts,omitempty"`
@@ -556,7 +556,7 @@ const (
 	// The event is likely to occur (greater than 50% probability).
 	CertaintyLikely Certainty = "likely"
 
-	// The event is unlikley to occur (less than 50% probability).
+	// The event is unlikely to occur (less than 50% probability).
 	CertaintyPossible Certainty = "possible"
 
 	// The event is not expected to occur (approximately 0% probability).
