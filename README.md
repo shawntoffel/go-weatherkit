@@ -38,7 +38,7 @@ Build a request:
 request := weatherkit.WeatherRequest{
 		Latitude:  38.960,
 		Longitude: -104.506,
-		Language:  language.English,
+		Language:  "en",
 		DataSets: weatherkit.DataSets{
 			weatherkit.DataSetCurrentWeather,
 		},
