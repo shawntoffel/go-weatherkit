@@ -3,8 +3,6 @@ package weatherkit
 import (
 	"net/url"
 	"time"
-
-	"golang.org/x/text/language"
 )
 
 // The date time format to use in query parameters.
@@ -13,7 +11,7 @@ const dateTimeFormat = time.RFC3339
 // WeatherRequest obtains weather data for the specified location.
 type WeatherRequest struct {
 	// The language tag to use for localizing responses.
-	Language language.Tag
+	Language string
 
 	// The latitude of the desired location.
 	Latitude float64

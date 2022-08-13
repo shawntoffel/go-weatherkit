@@ -3,15 +3,13 @@ package weatherkit
 import (
 	"testing"
 	"time"
-
-	"golang.org/x/text/language"
 )
 
 func TestWeatherRequestFullUrlGeneration(t *testing.T) {
 	ts, _ := time.Parse(dateTimeFormat, "2022-07-10T06:14:11Z")
 
 	req := WeatherRequest{
-		Language:    language.English,
+		Language:    "en",
 		Latitude:    40.713,
 		Longitude:   -74.006,
 		CountryCode: "US",

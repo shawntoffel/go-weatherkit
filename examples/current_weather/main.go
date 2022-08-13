@@ -5,7 +5,6 @@ import (
 	"fmt"
 
 	"github.com/shawntoffel/go-weatherkit"
-	"golang.org/x/text/language"
 )
 
 // print the current temp in new york
@@ -18,7 +17,7 @@ func main() {
 	request := weatherkit.WeatherRequest{
 		Latitude:  38.960,
 		Longitude: -104.506,
-		Language:  language.English,
+		Language:  "en",
 		DataSets: weatherkit.DataSets{
 			weatherkit.DataSetCurrentWeather,
 		},

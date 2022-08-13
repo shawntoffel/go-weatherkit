@@ -5,7 +5,6 @@ import (
 	"fmt"
 
 	"github.com/shawntoffel/go-weatherkit"
-	"golang.org/x/text/language"
 )
 
 // print event text for an alert id
@@ -17,7 +16,7 @@ func main() {
 
 	request := weatherkit.WeatherAlertRequest{
 		ID:       "alert id",
-		Language: language.English,
+		Language: "en",
 	}
 
 	response, err := client.Alert(ctx, token, request)

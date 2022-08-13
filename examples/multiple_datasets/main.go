@@ -5,7 +5,6 @@ import (
 	"fmt"
 
 	"github.com/shawntoffel/go-weatherkit"
-	"golang.org/x/text/language"
 )
 
 // print current, day 0 temp max, and hour 0 temp.
@@ -18,7 +17,7 @@ func main() {
 	request := weatherkit.WeatherRequest{
 		Latitude:  38.960,
 		Longitude: -104.506,
-		Language:  language.English,
+		Language:  "en",
 		DataSets: weatherkit.DataSets{
 			weatherkit.DataSetCurrentWeather,
 			weatherkit.DataSetForecastDaily,
