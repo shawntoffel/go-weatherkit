@@ -49,9 +49,14 @@ Get a response:
 ```go
 ctx := context.Background()
 
+// token is a JWT developer token. See the Authentication notes below.
 response, err := client.Weather(ctx, token, request)
 ```
-The `token` parameter is a JWT developer token used for authentication. See the documentation [here](https://developer.apple.com/documentation/weatherkitrestapi/request_authentication_for_weatherkit_rest_api) for details on JWT creation.
+
+## Authentication
+A JWT developer `token` parameter is used to authenticate requests. See the documentation [here](https://developer.apple.com/documentation/weatherkitrestapi/request_authentication_for_weatherkit_rest_api) for details on WeatherKit API authentication.
+
+A separate project [go-appledev](https://github.com/shawntoffel/go-appledev) might be useful for generating short-lived developer tokens. It outputs a valid signed developer token using your private key, key ID, team ID, service ID, and a duration of your choice as inputs. It may be used as a library or CLI app. 
 
 ## Documentation
 
