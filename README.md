@@ -36,13 +36,13 @@ Build a request:
 
 ```go
 request := weatherkit.WeatherRequest{
-		Latitude:  38.960,
-		Longitude: -104.506,
-		Language:  "en",
-		DataSets: weatherkit.DataSets{
-			weatherkit.DataSetCurrentWeather,
-		},
-	}
+	Latitude:  38.960,
+	Longitude: -104.506,
+	Language:  "en",
+	DataSets: weatherkit.DataSets{
+		weatherkit.DataSetCurrentWeather,
+	},
+}
 ```
 
 Get a response:
