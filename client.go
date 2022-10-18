@@ -9,9 +9,15 @@ import (
 	"net/http"
 )
 
+// DefaultUserAgent to send along with requests.
+const DefaultUserAgent = "shawntoffel/go-weatherkit"
+
 // Client is a WeatherKit API client.
 type Client struct {
 	HttpClient *http.Client
+
+	// The UserAgent header value to send along with requests.
+	UserAgent string
 }
 
 // Weather obtains weather data for the specified location.
@@ -48,6 +54,7 @@ func (d *Client) get(ctx context.Context, token string, request urlBuilder, outp
 		return err
 	}
 
+	req.Header.Add("User-Agent", d.userAgent())
 	req.Header.Add("Accept", "application/json; charset=utf-8")
 	req.Header.Add("Accept-Encoding", "gzip")
 	req.Header.Add("Authorization", "Bearer "+token)
@@ -65,6 +72,14 @@ func (d *Client) get(ctx context.Context, token string, request urlBuilder, outp
 	}
 
 	return decode(response, &output)
+}
+
+func (d *Client) userAgent() string {
+	if len(d.UserAgent) > 0 {
+		return d.UserAgent
+	}
+
+	return DefaultUserAgent
 }
 
 func validateResponse(response *http.Response) error {
