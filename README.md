@@ -1,13 +1,10 @@
-# go-weatherkit
+# weatherkit
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/shawntoffel/go-weatherkit.svg)](https://pkg.go.dev/github.com/shawntoffel/go-weatherkit) 
- [![Go Report Card](https://goreportcard.com/badge/github.com/shawntoffel/go-weatherkit)](https://goreportcard.com/report/github.com/shawntoffel/go-weatherkit) [![Build status](https://github.com/shawntoffel/go-weatherkit/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/shawntoffel/go-weatherkit/actions/workflows/go.yml)
+A [WeatherKit](https://developer.apple.com/weatherkit/) API client in Go.
 
-A [WeatherKit](https://developer.apple.com/weatherkit/) API client in Go. WeatherKit is powered by the Apple Weather service.
+*weatherkit* is a fork of [go-weatherkit](https://github.com/shawntoffel/go-weatherkit) that provides support for managed authentication. It is an open source project not affiliated with Apple Inc.
 
-Notice: The WeatherKit REST API is currently in beta and is subject to change. This client was created from documentation available here: https://developer.apple.com/documentation/weatherkitrestapi
-
-*go-weatherkit* is an open source project not affiliated with Apple Inc.
+Notice: This client was created from documentation available here: https://developer.apple.com/documentation/weatherkitrestapi
 
 ## Installing
 
@@ -15,7 +12,7 @@ This assumes you already have a working Go environment, if not please see
 [this page](https://golang.org/doc/install) first.
 
 ```sh
-go get github.com/shawntoffel/go-weatherkit
+go get github.com/nicknassar/weatherkit
 ```
 
 ## Usage
@@ -23,13 +20,13 @@ go get github.com/shawntoffel/go-weatherkit
 Import the package into your project:
 
 ```go
-import "github.com/shawntoffel/go-weatherkit"
+import "github.com/nicknassar/weatherkit"
 ```
 
 Create a new weatherkit client:
 
 ```go
-client := weatherkit.Client{}
+client := weatherkit.NewClient(keyId, teamId, serviceId, privateKey)
 ```
 
 Build a request:
@@ -49,18 +46,17 @@ Get a response:
 ```go
 ctx := context.Background()
 
-// token is a JWT developer token. See the Authentication notes below.
-response, err := client.Weather(ctx, token, request)
+response, err := client.Weather(ctx, request)
 ```
 
 ## Authentication
-A JWT developer `token` parameter is used to authenticate requests. See the documentation [here](https://developer.apple.com/documentation/weatherkitrestapi/request_authentication_for_weatherkit_rest_api) for details on WeatherKit API authentication.
+A JWT developer `token` is used to authenticate requests. See the documentation [here](https://developer.apple.com/documentation/weatherkitrestapi/request_authentication_for_weatherkit_rest_api) for details on WeatherKit API authentication.
 
-A separate project [go-appledev](https://github.com/shawntoffel/go-appledev) might be useful for generating short-lived developer tokens. It outputs a valid signed developer token using your private key, key ID, team ID, service ID, and a duration of your choice as inputs. It may be used as a library or CLI app. 
+The client requires keyId, teamId, serviceId, and the private key from Apple to generate the JWT token.
 
 ## Documentation
 
-- [![Go Reference](https://pkg.go.dev/badge/github.com/shawntoffel/go-weatherkit.svg)](https://pkg.go.dev/github.com/shawntoffel/go-weatherkit) 
+- [![Go Reference](https://pkg.go.dev/badge/github.com/nicknassar/weatherkit.svg)](https://pkg.go.dev/github.com/nicknassar/weatherkit)
 
 - [REST API](https://developer.apple.com/documentation/weatherkitrestapi)
 - [Authentication](https://developer.apple.com/documentation/weatherkitrestapi/request_authentication_for_weatherkit_rest_api)
@@ -72,9 +68,9 @@ See Apple's documentation for Apple Weather and third-party attribution requirem
 - https://weatherkit.apple.com/legal-attribution.html
 
 ## Examples
-- [Current weather](https://github.com/shawntoffel/go-weatherkit/tree/master/examples/current_weather/main.go)
-- [Hourly forecast](https://github.com/shawntoffel/go-weatherkit/tree/master/examples/hourly_forecast/main.go)
-- [Multiple data sets](https://github.com/shawntoffel/go-weatherkit/tree/master/examples/multiple_datasets/main.go)
+- [Current weather](https://github.com/nicknassar/weatherkit/tree/master/examples/current_weather/main.go)
+- [Hourly forecast](https://github.com/nicknassar/weatherkit/tree/master/examples/hourly_forecast/main.go)
+- [Multiple data sets](https://github.com/nicknassar/weatherkit/tree/master/examples/multiple_datasets/main.go)
 
 ## Troubleshooting
-Please use the GitHub [Discussions](https://github.com/shawntoffel/go-weatherkit/discussions) tab for questions regarding this client library. The Apple Developer forums are available for questions regarding the underlying API: https://developer.apple.com/forums/tags/weatherkit
+Please use the GitHub [Discussions](https://github.com/nicknassar/weatherkit/issues) to report issues. The Apple Developer forums are available for questions regarding the underlying API: https://developer.apple.com/forums/tags/weatherkit

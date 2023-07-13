@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shawntoffel/go-weatherkit"
+	"github.com/nicknassar/weatherkit"
 )
 
 // print current, day 0 temp max, and hour 0 temp.

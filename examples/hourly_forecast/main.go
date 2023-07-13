@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shawntoffel/go-weatherkit"
+	"github.com/nicknassar/weatherkit"
 )
 
 // print hour 0 temp in new york

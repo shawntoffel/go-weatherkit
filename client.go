@@ -10,7 +10,7 @@ import (
 )
 
 // DefaultUserAgent to send along with requests.
-const DefaultUserAgent = "shawntoffel/go-weatherkit"
+const DefaultUserAgent = "nicknassar-weatherkit"
 
 // Client is a WeatherKit API client.
 type Client struct {

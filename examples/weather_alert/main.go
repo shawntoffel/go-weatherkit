@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shawntoffel/go-weatherkit"
+	"github.com/nicknassar/weatherkit"
 )
 
 // print event text for an alert id

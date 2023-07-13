@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shawntoffel/go-weatherkit"
+	"github.com/nicknassar/weatherkit"
 )
 
 // print data set availability in new york
