@@ -1,0 +1,12 @@
+{
+    "logoDark@3x": "/assets/branding/en/Apple_Weather_wht_en_3X_090122.png",
+    "logoLight@1x": "/assets/branding/en/Apple_Weather_blk_en_1X_090122.png",
+    "logoDark@2x": "/assets/branding/en/Apple_Weather_wht_en_2X_090122.png",
+    "logoDark@1x": "/assets/branding/en/Apple_Weather_wht_en_1X_090122.png",
+    "logoLight@2x": "/assets/branding/en/Apple_Weather_blk_en_2X_090122.png",
+    "logoLight@3x": "/assets/branding/en/Apple_Weather_blk_en_3X_090122.png",
+    "logoSquare@2x": "/assets/branding/square-mark@2x.png",
+    "serviceName": "Apple Weather",
+    "logoSquare@1x": "/assets/branding/square-mark.png",
+    "logoSquare@3x": "/assets/branding/square-mark@3x.png"
+}
