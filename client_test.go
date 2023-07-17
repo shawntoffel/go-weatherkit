@@ -97,8 +97,44 @@ func TestWeatherAlertErrorResponse(t *testing.T) {
 	assertJsonEqual(t, expected, actual)
 }
 
-func weather(t *testing.T, filename string) {
+func TestAttributionResponse(t *testing.T) {
 	client := Client{}
+
+	server, expected, err := getMockServerWithFileData("testdata/attribution.json", http.StatusOK)
+	if err != nil {
+		t.Error(err.Error())
+	}
+
+	defer server.Close()
+	BaseUrl = server.URL
+
+	response, err := client.Attribution(context.TODO(), AttributionRequest{
+		Language: "en",
+	})
+	if err != nil {
+		t.Error(err.Error())
+	}
+
+	actual, err := json.Marshal(response)
+	if err != nil {
+		t.Errorf(err.Error())
+	}
+
+	assertJsonEqual(t, expected, actual)
+}
+
+func weather(t *testing.T, filename string) {
+	pk, err := createPrivateKeyPEM()
+	if err != nil {
+		t.Error(err)
+	}
+
+	client := NewCredentialedClient(Credentials{
+		KeyID:      "key",
+		TeamID:     "team",
+		ServiceID:  "service",
+		PrivateKey: pk,
+	})
 
 	server, expected, err := getMockServerWithFileData(filename, http.StatusOK)
 	if err != nil {
@@ -108,7 +144,7 @@ func weather(t *testing.T, filename string) {
 	defer server.Close()
 	BaseUrl = server.URL
 
-	response, err := client.Weather(context.TODO(), "", WeatherRequest{})
+	response, err := client.Weather(context.TODO(), WeatherRequest{})
 	if err != nil {
 		t.Error(err.Error())
 	}
@@ -122,7 +158,17 @@ func weather(t *testing.T, filename string) {
 }
 
 func availability(t *testing.T, filename string) {
-	client := Client{}
+	pk, err := createPrivateKeyPEM()
+	if err != nil {
+		t.Error(err)
+	}
+
+	client := NewCredentialedClient(Credentials{
+		KeyID:      "key",
+		TeamID:     "team",
+		ServiceID:  "service",
+		PrivateKey: pk,
+	})
 
 	server, expected, err := getMockServerWithFileData(filename, http.StatusOK)
 	if err != nil {
@@ -132,7 +178,7 @@ func availability(t *testing.T, filename string) {
 	defer server.Close()
 	BaseUrl = server.URL
 
-	response, err := client.Availability(context.TODO(), "", AvailabilityRequest{})
+	response, err := client.Availability(context.TODO(), AvailabilityRequest{})
 	if err != nil {
 		t.Error(err.Error())
 	}

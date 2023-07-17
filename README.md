@@ -20,19 +20,31 @@ go get github.com/shawntoffel/go-weatherkit
 
 ## Usage
 
-Import the package into your project:
+### Import the package into your project:
 
 ```go
 import "github.com/shawntoffel/go-weatherkit"
 ```
 
-Create a new weatherkit client:
+### Create a new weatherkit client:
 
 ```go
-client := weatherkit.Client{}
-```
+// See Authentication documentation below.
+privateKeyBytes, _ := os.ReadFile("/path/to/AuthKey_ABCDE12345.p8")
 
-Build a request:
+client := weatherkit.NewCredentialedClient(weatherkit.Credentials{
+	KeyID:      "key ID",
+	TeamID:     "team ID",
+	ServiceID:  "service ID",
+	PrivateKey: privateKeyBytes,
+})
+```
+Locating your identifiers:
+* **Key ID (kid)**: An identifier associated with your private key. It can be found on the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/authkeys/list) page under Keys. Click on the appropriate key to view the ID. 
+* **Team ID (tid)**: Found on the [account](https://developer.apple.com/account) page under Membership details.
+* **Service ID (sid)**: Found on the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list/serviceId) page under Identifiers. Make sure "Services IDs" is selected from the dropdown. 
+
+### Build a request:
 
 ```go
 request := weatherkit.WeatherRequest{
@@ -45,18 +57,12 @@ request := weatherkit.WeatherRequest{
 }
 ```
 
-Get a response:
+### Get a response:
 ```go
 ctx := context.Background()
 
-// token is a JWT developer token. See the Authentication notes below.
-response, err := client.Weather(ctx, token, request)
+response, err := client.Weather(ctx, request)
 ```
-
-## Authentication
-A JWT developer `token` parameter is used to authenticate requests. See the documentation [here](https://developer.apple.com/documentation/weatherkitrestapi/request_authentication_for_weatherkit_rest_api) for details on WeatherKit API authentication.
-
-A separate project [go-appledev](https://github.com/shawntoffel/go-appledev) might be useful for generating short-lived developer tokens. It outputs a valid signed developer token using your private key, key ID, team ID, service ID, and a duration of your choice as inputs. It may be used as a library or CLI app. 
 
 ## Documentation
 
@@ -75,6 +81,7 @@ See Apple's documentation for Apple Weather and third-party attribution requirem
 - [Current weather](https://github.com/shawntoffel/go-weatherkit/tree/master/examples/current_weather/main.go)
 - [Hourly forecast](https://github.com/shawntoffel/go-weatherkit/tree/master/examples/hourly_forecast/main.go)
 - [Multiple data sets](https://github.com/shawntoffel/go-weatherkit/tree/master/examples/multiple_datasets/main.go)
+- [DIY Credentials](https://github.com/shawntoffel/go-weatherkit/tree/master/examples/diy_credentials/main.go)
 
 ## Troubleshooting
 Please use the GitHub [Discussions](https://github.com/shawntoffel/go-weatherkit/discussions) tab for questions regarding this client library. The Apple Developer forums are available for questions regarding the underlying API: https://developer.apple.com/forums/tags/weatherkit

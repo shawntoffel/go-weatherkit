@@ -20,6 +20,10 @@ func weatherAlertEndpoint(lang string, id string) string {
 	return BaseUrl + "/weatherAlert/" + fmt.Sprintf("%s/%s", lang, id)
 }
 
+func attribution(lang string) string {
+	return BaseUrl + "/attribution/" + lang
+}
+
 func encodeUrlParameters(values url.Values) string {
 	queryString := values.Encode()
 
