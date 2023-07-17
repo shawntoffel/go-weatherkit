@@ -10,7 +10,7 @@ func TestWeatherAlertRequestFullUrlGeneration(t *testing.T) {
 		Language: "en",
 	}
 
-	want := BaseUrl + "/weatherAlert/en/test"
+	want := BaseUrl + "/api/v1/weatherAlert/en/test"
 	have := req.url()
 
 	if want != have {

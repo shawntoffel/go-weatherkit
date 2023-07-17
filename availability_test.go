@@ -11,7 +11,7 @@ func TestAvailabilityRequestFullUrlGeneration(t *testing.T) {
 		Country:   "US",
 	}
 
-	want := BaseUrl + "/availability/40.713/-74.006?country=US"
+	want := BaseUrl + "/api/v1/availability/40.713/-74.006?country=US"
 	have := req.url()
 
 	if want != have {

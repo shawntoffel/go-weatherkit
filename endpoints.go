@@ -6,18 +6,18 @@ import (
 )
 
 // WeatherKit API base URL
-var BaseUrl = "https://weatherkit.apple.com/api/v1"
+var BaseUrl = "https://weatherkit.apple.com"
 
 func weatherEndpoint(lang string, latitude float64, longitude float64, values url.Values) string {
-	return BaseUrl + "/weather/" + fmt.Sprintf("%s/%g/%g", lang, latitude, longitude) + encodeUrlParameters(values)
+	return BaseUrl + "/api/v1/weather/" + fmt.Sprintf("%s/%g/%g", lang, latitude, longitude) + encodeUrlParameters(values)
 }
 
 func availabilityEndpoint(latitude, longitude float64, values url.Values) string {
-	return BaseUrl + "/availability/" + fmt.Sprintf("%g/%g", latitude, longitude) + encodeUrlParameters(values)
+	return BaseUrl + "/api/v1/availability/" + fmt.Sprintf("%g/%g", latitude, longitude) + encodeUrlParameters(values)
 }
 
 func weatherAlertEndpoint(lang string, id string) string {
-	return BaseUrl + "/weatherAlert/" + fmt.Sprintf("%s/%s", lang, id)
+	return BaseUrl + "/api/v1/weatherAlert/" + fmt.Sprintf("%s/%s", lang, id)
 }
 
 func attribution(lang string) string {
